@@ -1,0 +1,13 @@
+name: Fire Drill
+
+on:
+  pull_request:
+
+jobs:
+  drill:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print drill marker and fail
+        run: |
+          echo "FIRE-DRILL-7Q4"
+          exit 1
